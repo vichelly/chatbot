@@ -1,15 +1,105 @@
-{"intents":[
-  { "tag": "saudacao",
-    "patterns":["Ola","Opa","Oi", "tudo bem","como vai"],
-    "responses": ["Oi","Olá"]
-  },
-  { "tag": "despedida",
-    "patterns":["valeu","tchau","Obrigado","fui","beleza"],
-    "responses": ["Até breve","Falou"]
-  },
-  { "tag": "data_prova",
-    "patterns":["Quando sera a prova?","A prova será em que dia?","vai ter exame?"],
-    "responses": ["no dia 26"]
-  }
-]
+{
+  "intents": [
+    {
+      "tag": "saudacao",
+      "patterns": ["Ola", "Opa", "Oi", "tudo bem", "como vai"],
+      "responses": ["Oi", "Olá"]
+    },
+    {
+      "tag": "despedida",
+      "patterns": ["valeu", "tchau", "Obrigado", "fui", "beleza"],
+      "responses": ["Até breve", "Falou"]
+    },
+    {
+      "tag": "informacoes_pipe",
+      "patterns": ["O que é o PIPE?", "O que é o programa PIPE?", "Me fale sobre o PIPE", "Como funciona o PIPE?", "O que o PIPE faz?"],
+      "responses": [
+        "O Programa Pesquisa Inovativa em Pequenas Empresas da FAPESP destina-se a apoiar a execução de pesquisa científica e/ou tecnológica em pequenas empresas no Estado de São Paulo. Seus objetivos são promover a inovação tecnológica e aumentar a competitividade das empresas."
+      ]
+    },
+    {
+      "tag": "etapas_pipe",
+      "patterns": ["Quais são as etapas do PIPE?", "O PIPE tem diferentes fases?", "Há etapas no programa PIPE?", "Como funciona o processo do PIPE?"],
+      "responses": [
+        "O programa PIPE tem várias fases: Fase 1 (verificação da viabilidade técnica), Fase 2 (execução da pesquisa), PIPE Invest (aceleração para chegada ao mercado) e Fase 3 (desenvolvimento comercial e industrial)."
+      ]
+    },
+    {
+      "tag": "fase_1_obrigatoria",
+      "patterns": ["A Fase 1 é obrigatória?", "Posso pular para a Fase 2?", "A Fase 2 pode ser iniciada diretamente?"],
+      "responses": [
+        "A empresa pode submeter uma proposta diretamente à Fase 2, desde que a viabilidade técnica da pesquisa já tenha sido demonstrada."
+      ]
+    },
+    {
+      "tag": "localizacao_pipe",
+      "patterns": ["O projeto de pesquisa precisa ser feito na empresa?", "Onde devo realizar o projeto PIPE?", "Posso fazer a pesquisa na universidade?"],
+      "responses": [
+        "Sim, o PIPE destina-se a apoiar a execução de pesquisa nas pequenas empresas sediadas no Estado de São Paulo."
+      ]
+    },
+    {
+      "tag": "empresa_inicio_pipe",
+      "patterns": ["Preciso ter uma empresa para solicitar o PIPE?", "É necessário já ter uma empresa?", "Posso submeter um projeto sem ter uma empresa?"],
+      "responses": [
+        "Não, a FAPESP aceita propostas de empresas ainda não constituídas. No entanto, a empresa deve ser formalizada antes da concessão do apoio."
+      ]
+    },
+    {
+      "tag": "requisitos_empresa",
+      "patterns": ["O que é uma empresa para o PIPE?", "Qual o tamanho da empresa para ser elegível?", "Quais são os requisitos da empresa para o PIPE?"],
+      "responses": [
+        "Para o PIPE, a empresa deve ter até 250 funcionários, independentemente do seu faturamento, e ser uma sociedade empresarial ou microempreendedor individual (MEI)."
+      ]
+    },
+    {
+      "tag": "submissao_pipe",
+      "patterns": ["Quando posso submeter uma proposta ao PIPE?", "Qual é o prazo para submeter ao PIPE?", "Quando as propostas são recebidas pelo PIPE?"],
+      "responses": [
+        "As propostas para as Fases 1, 2 e PIPE Invest são recebidas em fluxo contínuo durante todo o ano."
+      ]
+    },
+    {
+      "tag": "areas_prioritarias_pipe",
+      "patterns": ["O PIPE tem áreas prioritárias?", "Quais áreas são apoiadas pelo PIPE?", "O programa PIPE tem restrição de áreas?"],
+      "responses": [
+        "Não há áreas prioritárias no PIPE. O programa apoia pesquisas promissoras com potencial de inovação em qualquer área do conhecimento."
+      ]
+    },
+    {
+      "tag": "produto_pronto_pipe",
+      "patterns": ["Tenho um produto pronto, posso pedir financiamento para comercializá-lo?", "O PIPE financia a comercialização de produtos prontos?", "Posso pedir financiamento para um produto já desenvolvido?"],
+      "responses": [
+        "O PIPE financia a pesquisa para desenvolvimento de novos produtos, processos ou serviços inovadores. Caso o produto já esteja pronto, ele pode ser elegível para outros programas de subvenção econômica ou Fase 3 do PIPE."
+      ]
+    },
+    {
+      "tag": "doutorado_pipe",
+      "patterns": ["É preciso ter doutorado para solicitar o PIPE?", "Posso pedir financiamento do PIPE sem doutorado?", "Preciso ser doutor para participar do PIPE?"],
+      "responses": [
+        "Não é necessário ter doutorado para solicitar financiamento ao PIPE. O que é importante é a experiência e competência demonstrada na área do projeto."
+      ]
+    },
+    {
+      "tag": "dedicacao_exclusiva_pipe",
+      "patterns": ["Preciso ter dedicação exclusiva ao projeto?", "O pesquisador precisa se dedicar exclusivamente ao projeto PIPE?", "Há exigência de dedicação exclusiva no PIPE?"],
+      "responses": [
+        "O pesquisador principal deve se dedicar ao projeto por pelo menos 24 horas semanais na empresa, e 40 horas semanais se for solicitada uma Bolsa PE."
+      ]
+    },
+    {
+      "tag": "pesquisador_forado_estado",
+      "patterns": ["Pesquisadores fora do estado de São Paulo podem apresentar projetos?", "Posso submeter um projeto se a empresa não for de São Paulo?", "É possível submeter o projeto do PIPE se a empresa estiver fora de SP?"],
+      "responses": [
+        "O pesquisador responsável deve residir no estado de São Paulo. A empresa pode estar fora do estado, mas o pesquisador deve submeter o projeto em nome dessa empresa, com uma unidade de pesquisa em São Paulo."
+      ]
+    },
+    {
+      "tag": "consultores_pipe",
+      "patterns": ["Posso contratar consultores no PIPE?", "O PIPE permite contratação de consultores?", "A FAPESP permite a contratação de consultores?"],
+      "responses": [
+        "Sim, o PIPE permite a contratação de consultores e especialistas, desde que bem justificado e formalizado por contrato. A propriedade intelectual resultante do projeto deve pertencer à empresa."
+      ]
+    }
+  ]
 }
